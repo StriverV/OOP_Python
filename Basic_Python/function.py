@@ -1,3 +1,15 @@
+a = int(input())
+b = int(input())
+print(a+b)
+
+def add(n,s):
+    print(n+s)
+add(a,b)
+
+def op(n,s):
+    return n+s,n-s,n*s,n//s    #multi value return
+print(op(a,b))
+
 def double_it(n):
     result = n*2
     print(result)
@@ -17,5 +29,3 @@ print('output: ',total)
 final = double_it(total)
 print('final output: ',final)
 
-#fun theke value paite caile return
-#return na korle none asbe
