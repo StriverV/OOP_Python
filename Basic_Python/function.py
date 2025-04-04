@@ -2,6 +2,7 @@ a = int(input())
 b = int(input())
 print(a+b)
 
+# keyword --> def
 def add(n,s):
     print(n+s)
 add(a,b)
