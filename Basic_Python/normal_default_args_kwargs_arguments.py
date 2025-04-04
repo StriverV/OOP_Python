@@ -12,7 +12,7 @@ print(sum_num(1,2,4)) #1+2+4
 # *args --> *args creats a tuple of the arguments passed to the function
 # We have to add an * before the parameter to use args
 # as arguments passed to the function as a tuple
-# so order matter"
+# so,order matter
 """
 
 def show(*t):
@@ -46,7 +46,11 @@ print(add_mixed(1,5,3,4,5,6))    # here 1 --> normal , 5 --> default,& 3 to 6 ar
 """**kwargs  --> **kwargs creats a dictionary of the arguments passed to the function
 #  We have to add an ** before the parameter to use kwargs
 # as arguments passed to the function as a key-value pairs (dictionary) 
-# so order doesn't matter"
+# so order doesn't matter
+# value access --> kargs[Key_name]
+kwargs → If we return values separated by commas, 
+it will return the values as a tuple. 
+We can also return the values as a list or dictionary.
 """
 
 def show_kwargs(**d):
