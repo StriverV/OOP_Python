@@ -4,7 +4,7 @@
 # *args --> *args creats a tuple of the arguments passed to the function
 # We have to add an * before the parameter to use args
 # as arguments passed to the function as a tuple
-# so order matter"
+# so order matter
 """
 
 def show(*t):
