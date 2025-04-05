@@ -72,7 +72,7 @@ print(lq)     # deque([10, 20, 30, 40, 50, 33])
 lq.popleft()
 print(lq)     # deque([20, 30, 40, 50, 33])
 
-#  -----list comprehension ------
+#  -----generate a new list  by list comprehension ------
 
 lc = []
 for i in range(5):
@@ -82,9 +82,38 @@ print(lc)   #[0, 1, 4, 9, 16]
 
 #or
 # lambda function
-lc1 = list(map(lambda i : i*i, range(5)))
-print(lc1)
+# lc1 = list(map(lambda i : i*i, range(5)))
+# print(lc1)
 
-# or 
-lc2 = [i*i for i in range(5)]  # most Pythonic approach
-print(lc2)
+# # or 
+# lc2 = [i*i for i in range(5)]  # most Pythonic approach
+# print(lc2)
+
+
+a = [45, 87, 96, 65, 43, 90, 85, 14, 26, 61, 70]
+odds = []
+for i in a:
+    if i % 2 == 1 and i % 5 == 0:
+        odds.append(i)
+print(odds)   # [45, 65, 85]
+
+# or
+odd1 = [i for i in a if i % 2 == 1 if i % 5 == 0]
+
+
+
+# nested loop
+n = ['n', 'j', 'n']
+a = [20, 21, 22]
+
+comb = []
+for i in n:
+    for j in a:
+        comb.append([i, j])
+        
+print(comb)
+
+# or
+comb1 = [[i, j] for i in n for j in a]
+print(comb1)
+# [['n', 20], ['n', 21], ['n', 22], ['j', 20], ['j', 21], ['j', 22], ['n', 20], ['n', 21], ['n', 22]]
